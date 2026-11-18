@@ -1,5 +1,5 @@
 [project]
-name = "flight-search"
+name = "flight-tools"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,12 +8,16 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "fast-flights>=2.2,<3",
+    "flight-search>=0.1.7",
     "ipykernel>=7.4.0",
     "jupyter>=1.1.1",
+    "pandas>=3.1.1",
+    "primp<1",
 ]
 
 [project.scripts]
-flight-search = "flight_search:main"
+flight-tools = "flight_tools:main"
 
 [build-system]
 requires = ["uv_build>=0.12.12,<0.13.0"]
