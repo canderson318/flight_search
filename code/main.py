@@ -7,9 +7,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+from pathlib import Path
 # in_portland = (pd.Timestamp("2026-12-23"),pd.Timestamp("2026-12-28"))
 # in_sd = pd.Timestamp("2026-12-28") + pd.Timedelta(7, 'days')
-os.chdir("/Users/canderson/dev/py_stuff/flight_search")
+
+os.chdir(Path.home() / "dev/py_stuff/flight_search")
 
 travel_times = [
     ('DEN', 'PDX', '2026-12-21'),
